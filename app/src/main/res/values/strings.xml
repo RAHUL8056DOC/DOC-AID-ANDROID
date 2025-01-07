@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DocAidRahul</string>
+    <string name="email"> Email</string>
+    <string name="pass"> Password</string>
+    <string name="frgt">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="dr">Dr.</string>
+    <string name="dash">Dashboard</string>
+    <string name="clinic">Clinic</string>
+    <string name="appt">Appointments</string>
+    <string name="acc">Accounts</string>
+    <string name="help">Help!</string>
+    <string name="logout">Logout</string>
+    <string name="OpenDrawer">Open navigation drawer</string>
+    <string name="CloseDrawer">Close navigation drawer</string>
+    <string name="welcome">Welcome</string>
+</resources>

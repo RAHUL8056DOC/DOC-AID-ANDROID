@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dash"
+        android:title="@string/dash"
+        android:icon="@drawable/dashboard"/>
+    <item
+        android:id="@+id/clinic"
+        android:title="@string/clinic"
+        android:icon="@drawable/clinic" />
+    <item
+        android:id="@+id/appt"
+        android:title="@string/appt"
+        android:icon="@drawable/appointment"/>
+    <item
+        android:id="@+id/acc"
+        android:title="@string/acc"
+        android:icon="@drawable/account"/>
+    <item
+        android:id="@+id/help"
+        android:title="@string/help"
+        android:icon="@drawable/help"/>
+
+</menu>
