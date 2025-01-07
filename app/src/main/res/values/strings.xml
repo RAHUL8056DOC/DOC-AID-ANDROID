@@ -14,4 +14,10 @@
     <string name="OpenDrawer">Open navigation drawer</string>
     <string name="CloseDrawer">Close navigation drawer</string>
     <string name="welcome">Welcome</string>
+    <string name="loc">Location</string>
+    <string name="clinicName">Akansha Clinic</string>
+    <string name="clinicLoc">Patliputra</string>
+    <string name="visitNPF">Visiting New Patient Fees</string>
+    <string name="visitOPF">Visiting Old Patient Fees</string>
+    <string name="rs">Rs. </string>
 </resources>
