@@ -52,8 +52,6 @@ public class Home extends AppCompatActivity {
 
         loadFrag(new Dashboard());
         getSupportActionBar().setTitle("Dashboard");
-        System.out.println("hello");
-        System.out.println("bello");
 
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
