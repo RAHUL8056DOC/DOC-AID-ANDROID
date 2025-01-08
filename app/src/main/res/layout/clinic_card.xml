@@ -2,10 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="8dp"
     android:background="@color/super_light_grey"
     android:elevation="8dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -19,11 +19,12 @@
             android:textColor="@color/light_orange"
             android:textSize="25sp"
             android:textStyle="bold" />
+
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/gps"
-            android:layout_toStartOf="@+id/txtClinicLoc" />
+            android:layout_toStartOf="@+id/txtClinicLoc"
+            android:src="@drawable/gps" />
 
         <TextView
             android:id="@+id/txtClinicLoc"
@@ -31,28 +32,215 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:text="@string/clinicLoc"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/visitNPF"
+            android:textColor="@color/black"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/npfAmount"
+            android:text="@string/rs" />
+
+        <TextView
+            android:id="@+id/npfAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:text="@string/rs"/>
+            android:text="@string/zero" />
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/visitOPF"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/opfAmount"
+            android:text="@string/rs" />
+
+        <TextView
+            android:id="@+id/opfAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/zero" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/comp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/compounder"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/compounder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/comp"
+            android:text="@string/comp"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/ph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/ph"
+            android:text="@string/phno"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/tm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/timeS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_toEndOf="@+id/tm"
+            android:text="@string/time_s" />
+
+        <TextView
+            android:id="@+id/hiphen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_toEndOf="@+id/timeS"
+            android:text="@string/hiphen" />
+
+        <TextView
+            android:id="@+id/timeE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/hiphen"
+            android:text="@string/time_e" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_toEndOf="@+id/timeE">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/s"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/dark_red"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/dark_red"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/t"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/dark_red"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/w"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/dark_red"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/th"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/dark_red"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/f"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/dark_red"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sa"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/dark_red"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </LinearLayout>

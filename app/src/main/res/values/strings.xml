@@ -20,4 +20,20 @@
     <string name="visitNPF">Visiting New Patient Fees</string>
     <string name="visitOPF">Visiting Old Patient Fees</string>
     <string name="rs">Rs. </string>
+    <string name="zero">0.0 </string>
+    <string name="compounder">Compounder :</string>
+    <string name="comp">Sam Alex</string>
+    <string name="phone">Phone No.:</string>
+    <string name="phno">1234567890</string>
+    <string name="time">Time : </string>
+    <string name="time_s">StartTime </string>
+    <string name="hiphen"> - </string>
+    <string name="time_e">EndTime </string>
+    <string name="s">S </string>
+    <string name="m">M </string>
+    <string name="t">T </string>
+    <string name="w">W </string>
+    <string name="th">Th </string>
+    <string name="f">F </string>
+    <string name="sa">Sa </string>
 </resources>
